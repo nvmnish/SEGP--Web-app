@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Staining</title>
+    <link rel="stylesheet" href="{% static 'cancerAnalysis/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Virtual Staining Tool</h1>
+        <p>Simulate immunohistochemistry staining on your H&E slides.</p>
+    </header>
+
+    <section id="virtual-staining-instructions">
+        <h2>How to Use</h2>
+        <p>Upload your H&E stained image, and our tool will generate a virtually stained image, mimicking IHC staining, aiding in the identification of specific markers.</p>
+        <form action="/submit-your-image" method="post" enctype="multipart/form-data">
+            <label for="heImage">Upload H&E Image:</label>
+            <input type="file" id="heImage" name="heImage" accept="image/png, image/jpeg">
+            <input type="submit" value="Generate Virtual Staining">
+        </form>
+    </section>
+    <footer>
+    <button onclick="location.href='{% url 'clientside_landing' %}';">Back to Home</button>
+    </footer>
+</body>
+</html>

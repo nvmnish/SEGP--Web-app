@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Features Analysis</title>
+    <link rel="stylesheet" href="{% static 'cancerAnalysis/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Spatial Features Analysis Tool</h1>
+        <p>Analyze and visualize spatial features from histopathological images for advanced breast cancer research.</p>
+    </header>
+
+    <section id="spatial-features-description">
+        <h2>About Spatial Features Analysis</h2>
+        <p>This tool helps in the quantitative analysis of spatial relationships between cellular structures in histopathological images, offering insights into tumor microenvironments and cellular heterogeneity.</p>
+        
+        <h3>How It Works</h3>
+        <p>The Spatial Features Analysis tool employs advanced algorithms to dissect and interpret complex tissue images. By segmenting the image into individual cellular components, it assesses the spatial distribution and density of cells, identifying patterns that are indicative of tumor behavior and immune responses.</p>
+    
+        <h3>Using the Tool</h3>
+        <ol>
+            <li>Upload your histopathological image using the designated upload feature.</li>
+            <li>Select the type of analysis or markers you wish to investigate.</li>
+            <li>Initiate the analysis. The tool processes the image, highlighting key spatial features and generating a detailed report.</li>
+            <li>Review the results, which include visual maps and quantitative data on cellular interactions and distributions.</li>
+        </ol>
+    
+        <h3>Insights and Applications</h3>
+        <p>The analysis provides critical insights into:</p>
+        <ul>
+            <li>The extent of tumor infiltration by immune cells, offering clues about the immune response.</li>
+            <li>Patterns of cell proliferation and death, which are essential for understanding tumor growth and regression.</li>
+            <li>Microenvironmental niches that support tumor progression or suppression.</li>
+        </ul>
+    
+        <h3>Gallery</h3>
+        <p>Explore a selection of annotated images demonstrating the tool's capabilities:</p>
+        <div class="image-gallery">
+            <img src="path/to/image1.jpg" alt="Sample Analysis 1">
+            <img src="path/to/image2.jpg" alt="Sample Analysis 2">
+            <img src="path/to/image3.jpg" alt="Sample Analysis 3">
+        </div>
+    
+        <p>Each image in the gallery showcases a different aspect of spatial feature analysis, from tumor heterogeneity to immune cell infiltration.</p>
+    </section>
+    <footer>
+    <button onclick="location.href='{% url 'clientside_landing' %}';">Back to Home</button>
+    </footer>
+</body>
+</html>
