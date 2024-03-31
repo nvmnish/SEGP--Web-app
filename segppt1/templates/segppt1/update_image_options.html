@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Image Options</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #808080;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .button-container button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: #fff; /* White text color */
+            background-color: #002a56; /* Dark blue background color */
+            padding: 8px 16px; /* Adjust padding for better appearance */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+
+        .back-button:hover {
+            background-color: #747474; /* Dark blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        Update Image Options
+    </div>
+    <div class="button-container">
+        <button>Update WSI Slide patches</button>
+        <button>Update IHC image</button>
+        <button>Update Tumor mask</button>
+        <button>Update H&E image</button>
+    </div>
+    <a href="/options_page" class="back-button">Back to Options Page</a>
+</body>
+</html>
+

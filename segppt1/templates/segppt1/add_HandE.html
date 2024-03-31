@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload H&E images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #808080;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+        }
+
+        .left {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .right {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .upload-box {
+            border: 2px dashed #007bff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text-input {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .add-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: #fff; /* White text color */
+            background-color: #002a56; /* Dark blue background color */
+            padding: 8px 16px; /* Adjust padding for better appearance */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+
+        .back-button:hover {
+            background-color: #747474; /* Dark blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        Add H&E Image to Database
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="upload-box">
+                <h2>Upload H&E image</h2>
+                <!-- Upload box goes here -->
+                <input type="file" id="fileUpload" accept=".jpg, .jpeg, .png">
+            </div>
+        </div>
+        <div class="right">
+            <input type="text" class="text-input" placeholder="H&E Image Name">
+            
+            <button class="add-button">Add to Database</button>
+        </div>
+    </div>
+    <a href="/add_new_image_options" class="back-button">Back to Add Image Options</a>
+</body>
+</html>
